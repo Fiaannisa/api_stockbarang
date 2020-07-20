@@ -66,7 +66,7 @@ module.exports = function (app) {
 //tampil karyawan
     app.route('/tampilkaryawan')
         .get(jsonku.tampilkaryawan)
-
+//ubah karyawan
     app.route('/ubahkaryawan')
         .put(jsonku.ubahkaryawan)
 

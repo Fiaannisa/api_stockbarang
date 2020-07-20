@@ -303,7 +303,7 @@ exports.tampilkaryawan = function (req, res) {
         }
     });
 };
-
+//ubah karyawan
 exports.ubahkaryawan = function (req, res) {
     var id = req.body.id_karyawan;
     var nik = req.body.nik;
