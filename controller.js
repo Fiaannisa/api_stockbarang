@@ -323,7 +323,7 @@ exports.ubahkaryawan = function (req, res) {
             }
         });
 }
-
+//tambah karyawan
 exports.tambahkaryawan = function (req, res) {
     var nik = req.body.nik;
     var nama = req.body.nama;

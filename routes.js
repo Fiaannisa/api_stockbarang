@@ -69,7 +69,7 @@ module.exports = function (app) {
 //ubah karyawan
     app.route('/ubahkaryawan')
         .put(jsonku.ubahkaryawan)
-
+//tambah karyawan
     app.route('/tambahkaryawan')
         .post(jsonku.tambahkaryawan)
 
