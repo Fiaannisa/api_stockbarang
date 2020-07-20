@@ -50,7 +50,7 @@ module.exports = function (app) {
     app.route('/ubahbarangmasuk')
         .put(jsonku.ubahbarangmasuk)
 
-
+//ubah data barang keluar
     app.route('/ubahbarangkeluar')
         .put(jsonku.ubahbarangkeluar)
 

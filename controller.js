@@ -198,7 +198,7 @@ exports.ubahbarangmasuk = function (req, res) {
 }
 
 
-
+//ubah data barang keluar
 exports.ubahbarangkeluar = function (req, res) {
     var id = req.body.no_notakeluar;
     var tanggal= req.body.tanggal;
