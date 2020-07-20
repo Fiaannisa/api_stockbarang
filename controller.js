@@ -90,7 +90,7 @@ exports.tambahDistributor = function (req, res) {
 };
 
 
-
+//menambahkan data barang masuk
 exports.tambahBarangmasuk = function (req, res) {
     var no_notamasuk = req.body.no_notamasuk;
     var tanggal = req.body.tanggal;

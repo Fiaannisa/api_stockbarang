@@ -38,7 +38,7 @@ module.exports = function (app) {
     app.route('/tampilbarangkeluar')
         .get(jsonku.tampilbarangkeluar)
 
-
+//menambahkan data barang masuk
     app.route('/tambahbarangmasuk')
         .post(jsonku.tambahBarangmasuk)
 
