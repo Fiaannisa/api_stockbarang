@@ -114,7 +114,7 @@ exports.tambahBarangmasuk = function (req, res) {
 };
 
 
-
+//menambahkan data barang keluar
 exports.tambahBarangkeluar = function (req, res) {
     var no_notakeluar = req.body.no_notakeluar;
     var tanggal = req.body.tanggal;
