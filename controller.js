@@ -251,7 +251,7 @@ exports.hapusdistributor = function (req, res) {
         });
 };
 
-
+//hapus data barang masuk
 exports.hapusBarangmasuk = function (req, res) {
     var id = req.body.no_notamasuk;
     connection.query('DELETE FROM barang_masuk WHERE no_notamasuk=?', [id],

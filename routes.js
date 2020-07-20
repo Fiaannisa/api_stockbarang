@@ -53,7 +53,7 @@ module.exports = function (app) {
 //ubah data barang keluar
     app.route('/ubahbarangkeluar')
         .put(jsonku.ubahbarangkeluar)
-
+//hapus data barang masuk
     app.route('/hapusbarangmasuk')
         .delete(jsonku.hapusBarangmasuk)
 
