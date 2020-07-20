@@ -226,7 +226,7 @@ exports.ubahbarangkeluar = function (req, res) {
 
 
 
-//hapus data
+//hapus data barang
 exports.hapusBarang = function (req, res) {
     var id = req.body.id_barang;
     connection.query('DELETE FROM barang WHERE id_barang=?', [id],

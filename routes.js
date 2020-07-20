@@ -23,7 +23,7 @@ module.exports = function (app) {
 //mengubah data distributor
     app.route('/ubahdistributor')
         .put(jsonku.ubahdistributor)
-
+//hapus data barang
     app.route('/hapus')
         .delete(jsonku.hapusBarang)
 
