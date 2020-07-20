@@ -52,7 +52,7 @@ exports.tampilbarangkeluar = function (req, res) {
 };
 
 
-//menambahkan data 
+//menambahkan data barang
 exports.tambahBarang = function (req, res) {
     var kode_barang = req.body.kode_barang;
     var merk = req.body.merk;

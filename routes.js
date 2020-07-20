@@ -11,7 +11,7 @@ module.exports = function (app) {
 
     app.route('/tampildis')
         .get(jsonku.tampildistributor);
-
+//menambahkan data barang
     app.route('/tambahbarang')
         .post(jsonku.tambahBarang);
 
