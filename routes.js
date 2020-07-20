@@ -57,7 +57,7 @@ module.exports = function (app) {
     app.route('/hapusbarangmasuk')
         .delete(jsonku.hapusBarangmasuk)
 
-
+//hapus data barang masuk
     app.route('/hapusbarangkeluar')
         .delete(jsonku.hapusBarangkeluar)
 
