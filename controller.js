@@ -18,6 +18,7 @@ exports.tampildatabarang = function (req, res) {
     });
 };
 
+//menampilkan data distributor
 exports.tampildistributor = function (req, res) {
     connection.query('SELECT * FROM distributor', function (error, rows, fields) {
         if (error) {
