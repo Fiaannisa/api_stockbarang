@@ -343,7 +343,7 @@ exports.tambahkaryawan = function (req, res) {
             }
         });
 };
-
+//hapus karyawan
 exports.hapuskaryawan = function (req, res) {
     var id = req.body.id_karyawan;
     connection.query('DELETE FROM karyawan WHERE id_karyawan=?', [id],
