@@ -63,7 +63,7 @@ module.exports = function (app) {
 //tampil berdasarkan merk
     app.route('/tampil/:id')
         .get(jsonku.tampilberdasarkanid)
-
+//tampil karyawan
     app.route('/tampilkaryawan')
         .get(jsonku.tampilkaryawan)
 

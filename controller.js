@@ -293,7 +293,7 @@ exports.tampilberdasarkanid = function (req, res) {
             }
         });
 };
-
+//tampil karyawan
 exports.tampilkaryawan = function (req, res) {
     connection.query('SELECT * FROM karyawan', function (error, rows, fields) {
         if (error) {
