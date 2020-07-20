@@ -71,7 +71,7 @@ exports.tambahBarang = function (req, res) {
             }
         });
 };
-
+//menambahkan data distributor
 exports.tambahDistributor = function (req, res) {
     var kode_distributor = req.body.kode_distributor;
     var nama_distributor = req.body.nama_distributor;
