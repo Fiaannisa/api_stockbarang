@@ -26,7 +26,7 @@ module.exports = function (app) {
 //hapus data barang
     app.route('/hapus')
         .delete(jsonku.hapusBarang)
-
+//hapus data distributor
     app.route('/hapusdistributor')
         .delete(jsonku.hapusdistributor)
 

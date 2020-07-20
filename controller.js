@@ -238,7 +238,7 @@ exports.hapusBarang = function (req, res) {
             }
         });
 }
-
+//hapus data distributor
 exports.hapusdistributor = function (req, res) {
     var id = req.body.id_distributor;
     connection.query('DELETE FROM distributor WHERE id_distributor=?', [id],
