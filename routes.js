@@ -46,7 +46,7 @@ module.exports = function (app) {
     app.route('/tambahbarangkeluar')
         .post(jsonku.tambahBarangkeluar)
 
-
+//mengubah data barangmasuk
     app.route('/ubahbarangmasuk')
         .put(jsonku.ubahbarangmasuk)
 

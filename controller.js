@@ -175,7 +175,7 @@ exports.ubahdistributor = function (req, res) {
         });
 }
 
-
+//mengubah data barang masuk
 exports.ubahbarangmasuk = function (req, res) {
     var id = req.body.no_notamasuk;
     var tanggal= req.body.tanggal;
