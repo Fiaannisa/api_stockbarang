@@ -136,7 +136,7 @@ exports.tambahBarangkeluar = function (req, res) {
 };
 
 
-//mengubah data
+//mengubah data barang
 exports.ubahbarang = function (req, res) {
     var id = req.body.id_barang;
     var kode_barang = req.body.kode_barang;
