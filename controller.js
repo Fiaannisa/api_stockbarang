@@ -157,7 +157,7 @@ exports.ubahbarang = function (req, res) {
 }
 
 
-
+//mengubah data distributor
 exports.ubahdistributor = function (req, res) {
     var id = req.body.id_distributor;
     var kode_distributor = req.body.kode_distributor;

@@ -20,7 +20,7 @@ module.exports = function (app) {
 //mengubah data barang
     app.route('/ubahbarang')
         .put(jsonku.ubahbarang)
-
+//mengubah data distributor
     app.route('/ubahdistributor')
         .put(jsonku.ubahdistributor)
 
