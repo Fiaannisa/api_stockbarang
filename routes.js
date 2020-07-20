@@ -34,7 +34,7 @@ module.exports = function (app) {
     app.route('/tampilbarangmasuk')
         .get(jsonku.tampilbarangmasuk)
 
-
+//menampilkan data barang keluar
     app.route('/tampilbarangkeluar')
         .get(jsonku.tampilbarangkeluar)
 

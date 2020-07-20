@@ -40,7 +40,7 @@ exports.tampilbarangmasuk = function (req, res) {
     });
 };
 
-
+//menampilkan data barang keluar
 exports.tampilbarangkeluar = function (req, res) {
     connection.query('SELECT * FROM barang_keluar', function (error, rows, fields) {
         if (error) {
