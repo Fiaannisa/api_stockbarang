@@ -60,7 +60,7 @@ module.exports = function (app) {
 //hapus data barang masuk
     app.route('/hapusbarangkeluar')
         .delete(jsonku.hapusBarangkeluar)
-
+//tampil berdasarkan merk
     app.route('/tampil/:id')
         .get(jsonku.tampilberdasarkanid)
 

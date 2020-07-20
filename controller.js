@@ -281,7 +281,7 @@ exports.hapusBarangkeluar = function (req, res) {
 
 
 
-
+//tampil berdasarkan merk
 exports.tampilberdasarkanid = function (req, res) {
     let id = req.params.id;
     connection.query('SELECT * FROM barang WHERE merk = ?', [id],
