@@ -29,7 +29,7 @@ exports.tampildistributor = function (req, res) {
     });
 };
 
-
+//menampilkan data barang masuk
 exports.tampilbarangmasuk = function (req, res) {
     connection.query('SELECT * FROM barang_masuk', function (error, rows, fields) {
         if (error) {

@@ -30,7 +30,7 @@ module.exports = function (app) {
     app.route('/hapusdistributor')
         .delete(jsonku.hapusdistributor)
 
-
+//menampilkan data barang masuk
     app.route('/tampilbarangmasuk')
         .get(jsonku.tampilbarangmasuk)
 
