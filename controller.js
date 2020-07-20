@@ -7,7 +7,7 @@ exports.index = function (req, res) {
     response.ok("Project UTS Rest API berjalan!", res)
 };
 
-//menampilkan data 
+//menampilkan data barang
 exports.tampildatabarang = function (req, res) {
     connection.query('SELECT * FROM barang', function (error, rows, fields) {
         if (error) {
