@@ -9,15 +9,17 @@ var ip = require('ip');
 //controller untuk register
 exports.registrasi = function(req,res) {
     var post = {
-        username: req.body.username,
+        nik: req.body.nik,
+        nama: req.body.nama,
         email: req.body.email,
-        password: md5(req.body.password),
-        role: req.body.role,
-        tanggal_daftar: new Date()
+        jenis_kelamin: req.body.jenis_kelamin,
+        jabatan: req.body.jabatan,
+        alamat: req.body.alamat,
+        password: md5(req.body.password)
     }
 
     var query = "SELECT email FROM ?? WHERE ??=?";
-    var table = ["user", "email", post.email];
+    var table = ["karyawan", "email", post.email];
 
     query = mysql.format(query,table);
 
@@ -27,7 +29,7 @@ exports.registrasi = function(req,res) {
         }else {
             if(rows.length == 0){
                 var query = "INSERT INTO ?? SET ?";
-                var table = ["user"];
+                var table = ["karyawan"];
                 query = mysql.format(query, table);
                 connection.query(query, post, function(error, rows){
                     if(error){
@@ -51,7 +53,7 @@ exports.login = function(req,res){
     }
 
     var query = "SELECT * FROM ?? WHERE ??=? AND ??=?";
-    var table = ["user", "password", md5(post.password), "email", post.email];
+    var table = ["karyawan", "password", md5(post.password), "email", post.email];
 
     query = mysql.format(query,table);
     
@@ -64,10 +66,10 @@ exports.login = function(req,res){
                     expiresIn: 1440
                 });
 
-                id_user = rows[0].id;
+                nik = rows[0].id;
 
                 var data = {
-                    id_user: id_user,
+                    nik: nik,
                     access_token: token,
                     ip_address: ip.address()
                 }
@@ -84,7 +86,7 @@ exports.login = function(req,res){
                             success: true,
                             message:'Token JWT tergenerate!',
                             token:token,
-                            currUser: data.id_user
+                            currUser: data.nik
                         });
                     }
                 });
